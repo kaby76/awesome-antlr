@@ -82,6 +82,7 @@ Grammars maintained by the language/product's own project — first-hand, author
 - [C#](https://github.com/dotnet/csharpstandard/blob/draft-v8/standard/grammar.md) - The C# grammar in ANTLR notation from the ECMA-334 standard (dotnet/csharpstandard, C# standards committee); also rendered on [Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/grammar).
 - [MySQL](https://github.com/mysql/mysql-shell-plugins) - Oracle's official MySQL grammar (`MySQLParser.g4` / `MySQLLexer.g4`), used by MySQL Shell.
 - [GQL](https://github.com/opengql/grammar) - ANTLR grammar for the ISO/IEC 39075 Graph Query Language. See also [TuGraph-family/gql-grammar](https://github.com/TuGraph-family/gql-grammar).
+- [Common Expression Language (CEL)](https://github.com/cel-expr/cel-go/blob/master/parser/gen/CEL.g4) - The ANTLR grammar used by the CEL project's Go implementation.
 - [Apache Avro IDL](https://github.com/apache/avro/blob/main/share/idl_grammar/org/apache/avro/idl/Idl.g4) - The grammar for Avro's interface description language.
 - [Apache Groovy](https://github.com/apache/groovy/tree/master/src/antlr) - The official grammar for the Groovy language (`GroovyParser.g4` / `GroovyLexer.g4`).
 - [Apache Spark SQL](https://github.com/apache/spark/tree/master/sql/api/src/main/antlr4/org/apache/spark/sql/catalyst/parser) - Spark's SQL dialect grammar (`SqlBaseParser.g4`).
