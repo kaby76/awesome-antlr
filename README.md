@@ -16,6 +16,7 @@ ANTLR generates lexers and parsers from a single grammar (`.g4`) file, using the
 - [The Tool](#the-tool)
 - [Runtime Targets](#runtime-targets)
 - [Tooling](#tooling)
+- [Projects Built on ANTLR](#projects-built-on-antlr)
 - [Grammars](#grammars)
   - [Grammar Collections](#grammar-collections)
   - [Vendor-Published Grammars](#vendor-published-grammars)
@@ -67,6 +68,14 @@ The reference runtimes for Java, C#, C++, Go, Python3, JavaScript, Dart, and Swi
 - [Grun.Net](https://github.com/wiredwiz/Grun.Net) - A .NET toolset for testing and diagnosing ANTLR 4 grammars, a TestRig alternative for C# parsers.
 - [Grammarinator](https://github.com/renatahodovan/grammarinator) - A grammar-based test generator (fuzzer) that produces random inputs from an ANTLR 4 grammar.
 - [rules_antlr](https://github.com/marcohu/rules_antlr) - Bazel build rules for running ANTLR on your grammars.
+
+## Projects Built on ANTLR
+
+Applications where ANTLR is an implementation detail rather than the interface. Useful as worked references for consuming generated parsers at scale:
+
+- [PMD](https://github.com/pmd/pmd) - Extensible multi-language static analyzer. Its Kotlin and Swift rule engines use ANTLR-generated parse-tree context objects directly as PMD AST nodes — a documented case study in [adapting a parse tree to an existing AST interface](https://docs.pmd-code.org/latest/pmd_devdocs_major_adding_new_language_antlr.html), including the resulting loss of XPath attributes. Its bundled CPD (Copy/Paste Detector) shows the cheaper integration: fourteen further languages, from C# and Go to Julia and Gherkin, are supported with the *lexer* alone, matching duplicate code over token streams with no parser or grammar rules involved.
+- [Perses](https://github.com/uw-pluverse/perses) - Language-agnostic program reducer that shrinks a failing input while preserving a test-script property. Rather than parsing with a grammar, it treats the grammar as the search space: it reads the `.g4` rules and ANTLR's ATN to generate only syntactically valid candidates, avoiding the wasted iterations of Delta Debugging. Introduced at ICSE 2018 ([doi:10.1145/3180155.3180236](https://doi.org/10.1145/3180155.3180236)) and extended by a decade of follow-on papers; ships grammars for roughly twenty languages.
+- [mehen](https://github.com/ophi-dev/mehen) - Rust CLI computing complexity, maintainability, and documentation metrics across a polyglot codebase. Its Kotlin, Java, and C# frontends run committed ANTLR-generated parsers against [antlr-rust-runtime](https://github.com/ophi-dev/antlr-rust-runtime), pinned to an exact version so the generated code and runtime stay in lockstep — a demonstration of the JVM-free build path alongside tree-sitter and native frontends in one binary.
 
 ## Grammars
 
