@@ -111,6 +111,7 @@ Notable standalone grammars maintained by the community:
 - [quoteparser](https://github.com/quoteparser/grammar/tree/master/src/main/antlr4/com/quoteparser) - A grammar for parsing FX option quotes, a neat example of parsing a non-programming-language notation.
 - [PolymorphicDSL Gherkin](https://github.com/google/polymorphicDSL/tree/main/src/main/antlr4/com/pdsl/gherkin/parser) - A multi-dialect Gherkin (Cucumber BDD) grammar from Google's PolymorphicDSL test framework, with a lexer generated to recognize keywords across many spoken languages.
 - [midi-grammar](https://github.com/milnet2/midi-grammar) - An experimental grammar that lexes the *binary* MIDI file format — byte-range tokens and lexer modes for chunk lengths and variable-length quantities — using a Kotlin lexer `superClass` to handle the length-prefixed reads. A rare example of ANTLR applied to binary data rather than text.
+- [dockerfile-antlr4-grammar](https://github.com/wharflab/dockerfile-antlr4-grammar) - A split lexer/parser grammar for Dockerfiles, using lexer modes to separate instruction keywords from their argument text. From WharfLab, whose other container tooling includes the [tally](https://github.com/wharflab/tally) Dockerfile linter and a tree-sitter Containerfile grammar; parse trees are checked against BuildKit's own parser.
 
 ## Benchmarks
 
