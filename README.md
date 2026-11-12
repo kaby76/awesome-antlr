@@ -68,7 +68,8 @@ The reference runtimes for Java, C#, C++, Go, Python3, JavaScript, Dart, and Swi
 - [Grun.Net](https://github.com/wiredwiz/Grun.Net) - A .NET toolset for testing and diagnosing ANTLR 4 grammars, a TestRig alternative for C# parsers.
 - [Grammarinator](https://github.com/renatahodovan/grammarinator) - A grammar-based test generator (fuzzer) that produces random inputs from an ANTLR 4 grammar.
 - [rules_antlr](https://github.com/marcohu/rules_antlr) - Bazel build rules for running ANTLR on your grammars.
-- [Trash](https://github.com/kaby76/Trash) - .NET CLI toolkit for ANTLR 4 grammar testing, querying, and refactoring.
+- [Trash](https://github.com/kaby76/Trash) - .NET CLI toolkit for ANTLR 4 grammar testing, querying, and refactoring. Includes a high performance implementation of `ALL(*)`.
+- [Galop](https://github.com/martianoff/galop) - A high performance implementation of `ALL(*)`.
 
 ## Projects Built on ANTLR
 
@@ -117,6 +118,7 @@ Notable standalone grammars maintained by the community:
 ## Benchmarks
 
 - [antlr4-runtime-benchmarks](https://github.com/mike-lischke/antlr4-runtime-benchmarks) - Cross-runtime performance benchmarks comparing ANTLR targets on the same grammars and inputs.
+- [grammars-v4](https://github.com/antlr/grammars-v4#performance) - Performance, ambiguity counts, and action block counts are computed regularly for all grammars in grammars-v4.
 
 ## Learning
 
