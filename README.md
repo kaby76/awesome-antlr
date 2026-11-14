@@ -43,7 +43,6 @@ ANTLR generates lexers and parsers from a single grammar (`.g4`) file, using the
 ## The Tool
 
 - [antlr/antlr4](https://github.com/antlr/antlr4) - The reference parser generator and its bundled Java, C#, C++, Go, Python, JavaScript, Dart, and Swift runtimes.
-- [antlr-ng](https://github.com/antlr-ng/antlr-ng) - Next-generation TypeScript reimplementation of the ANTLR tool.
 - [ANTLR Lab](https://github.com/antlr/antlr4-lab) - Browser-based playground to write grammars and visualize parse trees.
 
 ## Runtime Targets
@@ -54,13 +53,12 @@ The reference runtimes for Java, C#, C++, Go, Python3, JavaScript, Dart, and Swi
 - [antlr4ng](https://github.com/mike-lischke/antlr4ng) - Modern TypeScript/JavaScript runtime.
 - [antlr4cs](https://github.com/tunnelvisionlabs/antlr4cs) - Highly-optimized alternative C# target.
 - [antlr-php-runtime](https://github.com/antlr/antlr-php-runtime) - Official PHP runtime.
-- [antlr-rust-runtime](https://github.com/ophi-dev/antlr-rust-runtime) - Pure-Rust runtime and `.g4` code generator, no JVM required at build time.
 - [antlr4wasm](https://github.com/mike-lischke/antlr4wasm) - WebAssembly target for ANTLR4 with a TypeScript interface. On hold: its own benchmarks found the existing JS/TS runtime faster than the compiled-to-WASM build. A Rust-to-WebAssembly path (compact, GC-free output) is a different bet on this idea — tracked as antlr-rust-runtime [#143](https://github.com/ophi-dev/antlr-rust-runtime/issues/143).
 - [antlr-kotlin](https://github.com/Strumenta/antlr-kotlin) - Kotlin target for ANTLR 4, including Kotlin Multiplatform support.
 - [stantler](https://github.com/davidsun0/stantler) - An early-stage ANTLR4-compatible lexer/parser generator for Common Lisp, generating parser functions directly from `.g4` files.
 
-## Tooling
-
+## Alternative generators, runtimes, and tools
+- [antlr-ng](https://github.com/antlr-ng/antlr-ng) - Next-generation TypeScript reimplementation of the ANTLR tool.
 - [antlr4-c3](https://github.com/mike-lischke/antlr4-c3) - Grammar-agnostic code-completion engine for ANTLR-based parsers.
 - [vscode-antlr4](https://github.com/mike-lischke/vscode-antlr4) - Visual Studio Code extension: syntax highlighting, railroad diagrams, ATN visualization, debugging.
 - [intellij-plugin-v4](https://github.com/antlr/intellij-plugin-v4) - ANTLR v4 plugin for IntelliJ IDEA: live grammar preview and parse-tree inspection.
@@ -69,7 +67,9 @@ The reference runtimes for Java, C#, C++, Go, Python3, JavaScript, Dart, and Swi
 - [Grammarinator](https://github.com/renatahodovan/grammarinator) - A grammar-based test generator (fuzzer) that produces random inputs from an ANTLR 4 grammar.
 - [rules_antlr](https://github.com/marcohu/rules_antlr) - Bazel build rules for running ANTLR on your grammars.
 - [Trash](https://github.com/kaby76/Trash) - .NET CLI toolkit for ANTLR 4 grammar testing, querying, and refactoring. Includes a high performance implementation of `ALL(*)`.
-- [Galop](https://github.com/martianoff/galop) - A high performance implementation of `ALL(*)`.
+- [antlr-rust-runtime](https://github.com/ophi-dev/antlr-rust-runtime) - Pure-Rust runtime and `.g4` code generator, no JVM required at build time.
+- [dbt-antlr](https://github.com/sdf-labs/dbt-antlr) - Optimized fork of [antlr-rust-runtime](https://github.com/ophi-dev/antlr-rust-runtime) for SQL.
+- [Galop](https://github.com/martianoff/galop) - A highly optimized implementation of hybrid of `ALL(*)`.
 
 ## Projects Built on ANTLR
 
