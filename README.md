@@ -70,6 +70,7 @@ The reference runtimes for Java, C#, C++, Go, Python3, JavaScript, Dart, and Swi
 - [antlr-rust-runtime](https://github.com/ophi-dev/antlr-rust-runtime) - Pure-Rust runtime and `.g4` code generator, no JVM required at build time.
 - [dbt-antlr](https://github.com/sdf-labs/dbt-antlr) - Optimized fork of [antlr-rust-runtime](https://github.com/ophi-dev/antlr-rust-runtime) for SQL.
 - [Galop](https://github.com/martianoff/galop) - A highly optimized implementation of hybrid of `ALL(*)`.
+- [MoonANTLR](https://github.com/wdgodghl/MoonANTLR)
 
 ## Projects Built on ANTLR
 
